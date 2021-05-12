@@ -1,6 +1,5 @@
-\contentsline {section}{\numberline {1}Introduction}{2}%
-\contentsline {subsection}{\numberline {1.1}Background}{2}%
-\contentsline {section}{\numberline {2}$\sigma $-Algebras and Measurable Functions}{3}%
-\contentsline {subsection}{\numberline {2.1}$\sigma $-Algebras}{3}%
-\contentsline {section}{\numberline {3}Measures}{3}%
-\contentsline {section}{\numberline {4}The Lebesgue Integral}{3}%
+\contentsline {section}{\tocsection {}{1}{$\sigma $-Algebras and Measurable Functions}}{2}%
+\contentsline {subsection}{\tocsubsection {}{1.1}{$\sigma $-Algebras}}{2}%
+\contentsline {subsection}{\tocsubsection {}{1.2}{Measurable functions}}{3}%
+\contentsline {section}{\tocsection {}{2}{Measures}}{4}%
+\contentsline {section}{\tocsection {}{3}{The Lebesgue Integral}}{5}%
