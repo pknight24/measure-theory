@@ -1,0 +1,108 @@
+\documentclass{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+
+
+%%% some helpful shortcuts
+\newcommand{\bbR}{\mathbb{R}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+
+\title{Measure Theory Notes}
+\author{Parker Knight}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+
+\section{Introduction}
+
+This document contains a collection of notes on measures and integrals,
+mostly inspired by the text \textit{Elements of Integration} by Bartle. This
+is primarily a learning tool for myself; I'm currently learning this material in
+preparation for my PhD program which begins this fall.
+
+In this section I provide some background definitions which may be referenced throughout
+the notes.
+
+\subsection{Background}
+
+\newpage
+
+\section{$\sigma$-Algebras and Measurable Functions} 
+
+Loosely speaking, a measure is a nonnegative, countably additive real-valued
+function defined on a collection of
+well-behaved sets. Before we can give a more rigorous definition of a measure,
+we need to examine what is precisely meant by \textit{well-behaved}. This
+section explores the concept of the $\sigma$-algebra, a collection of sets which
+holds certain properties required for the formal definition of measure.
+I will also discuss measurable functions, and give examples of both.
+
+\subsection{$\sigma$-Algebras}
+
+\begin{definition}[$\sigma$-algebra]\label{def:sigma-alg}
+    Let $X$ be any set, and let $\Sigma$ be a collection of subsets of $X$.
+    We say that $\Sigma$ is a \textit{$\sigma$-algebra} if:
+    \begin{enumerate}
+        \item $\emptyset, X \in \Sigma$
+        \item If $A \in \Sigma$, then $A^c \in \Sigma$
+        \item If $(A_n)$ is a sequence of sets in $\Sigma$, then $\bigcup A_n
+        \in \Sigma$
+    \end{enumerate}
+    
+\end{definition}
+
+Defintion \ref{def:sigma-alg} states that a $\sigma$-algebra is closed under
+taking complements and unions. It follows by De Morgan's laws that every
+$\sigma$-algebra is also closed under taking intersections. Below provides some
+simple examples.
+
+\begin{example}
+    If $X$ is any set, then $\Sigma = \{ X, \emptyset \}$ is the trivial
+    $\sigma$-algebra.
+\end{example}
+
+\begin{example}
+    For any $X$, the power set of $X$ (the set of all subsets of $X$) is a
+    $\sigma$-algebra.
+\end{example}
+
+\begin{example}
+    For any $X$ and $A \subset X$, the set $\Sigma = \{\emptyset, A, A^c, X \}$
+    is a $\sigma$-algebra.
+\end{example}
+
+
+A useful result is that the intersection of two $\sigma$-algebras is itself a
+$\sigma$-algebra.
+
+\begin{proposition}\label{prop:intersection-sig-alg}
+    Let $X$ be an arbitrary set, and let $\Sigma_1$ and $\Sigma_2$ be
+    $\sigma$-algebras of $X$. Then $\Sigma_3 = \Sigma_1 \cap \Sigma_2$ is a $\sigma$-algeba.
+\end{proposition}
+
+\begin{proof}
+    The proof is simple. First, we know that $\emptyset, X \in \Sigma_1$ and
+    $\emptyset, X \in \Sigma_2$, so we have $\emptyset, X \in \Sigma_1 \cap
+    \Sigma_2$. Now let $A \in \Sigma_1 \cap \Sigma_2$ be arbitrary. Then $A \in
+    \Sigma_1$ and $A \in \Sigma_2$, and so we have $A^c \in \Sigma_1$ and $A^c
+    \in \Sigma_2$ by Definition \ref{def:sigma-alg}. So $A^c \in \Sigma_1 \cap
+    \Sigma_2$. Finally, if $(A_n)$ is a sequence in $\Sigma_1 \cap \Sigma_2$,
+    then $(A_n)$ is a sequence in $\Sigma_1$ and $\Sigma_2$ as well. So $\cup An
+    \in \Sigma_1$ and $\cup A_n \in \Sigma_2$, so $\cup A_n \in \Sigma_1 \cap \Sigma_2$.
+\end{proof}
+
+\section{Measures}
+
+\section{The Lebesgue Integral}
+
+\end{document}
