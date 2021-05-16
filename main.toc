@@ -1,5 +1,5 @@
 \contentsline {section}{\tocsection {}{1}{$\sigma $-Algebras and Measurable Functions}}{2}%
 \contentsline {subsection}{\tocsubsection {}{1.1}{$\sigma $-Algebras}}{2}%
 \contentsline {subsection}{\tocsubsection {}{1.2}{Measurable functions}}{3}%
-\contentsline {section}{\tocsection {}{2}{Measures}}{4}%
-\contentsline {section}{\tocsection {}{3}{The Lebesgue Integral}}{5}%
+\contentsline {section}{\tocsection {}{2}{Measures}}{5}%
+\contentsline {section}{\tocsection {}{3}{The Lebesgue Integral}}{6}%
