@@ -225,7 +225,66 @@ Now we can state the characterization of measurable functions from $X$ to $\bbR$
 \end{proof}
 
 In fact, the condition in Proposition \ref{prop:measurable-fn-r} can be
-generalized to any set that generates $\Borel$, such as the open intervals. 
+generalized to any set that generates $\Borel$, such as the open intervals. Now
+we provide some examples of measurable functions.
+
+\begin{example}
+    A constant function $f:(X,\Sigma_1) \rightarrow (Y, \Sigma_2)$ is
+    measurable. 
+    To see this for say $f(x) = y$, notice for any $E \in \Sigma_2$ that
+    $f^{-1}(E) = X$ if $y \in E$ and $f^{-1}(E) = \emptyset$ if $y \notin E$.
+    Clearly $X,\emptyset \in \Sigma_1$, so $f$ is measurable.
+\end{example}
+
+\begin{example}
+    If $E \in \Sigma$, then define $1_E$ to be the indicator (or characteristic)
+    function of $E$; that is, $1_E(x) = 1$ if $x \in E$ and $1_E(x) = 0$
+    otherwise. 
+    The function $1_E : (X, \Sigma) \rightarrow (\bbR, \Borel)$
+    is measurable.
+\end{example}
+
+\begin{example}
+    Any continuous function $f: (\bbR, \Borel) \rightarrow (\bbR, \Borel)$ is
+    measurable: recall that the preimage of any open set under a continuous
+    function is open.
+\end{example}
+
+\begin{lemma}
+    If $f$ and $g$ are measurable real-valued functions and $c \in \bbR$, then
+    the following functions are measurable:
+    \begin{enumerate}
+        \item $fc$
+        \item $f + g$
+        \item $fg$
+        \item $|f|$
+    \end{enumerate}
+\end{lemma}
+
+For convenience, let $M(X, \Sigma)$ denote the set of measurable functions $f: X
+\rightarrow \bar{\bbR}$. The consideration of extended-real-valued functions is
+useful when dealing with limits and suprema of sequences, as in
+the next lemma.
+
+\begin{lemma}
+    Let $(f_n)$ be a sequence in $M(X, \Sigma)$. Then the following functions
+    are measurable:
+
+    \begin{enumerate}
+        \item $f(x) = \inf f_n(x)$
+        \item $F(x) = \sup f_n(x)$
+        \item $f^*(x) = \liminf f_n(x)$
+        \item $F^*(x) = \limsup f_n(x)$
+    \end{enumerate}
+
+\end{lemma}
+
+\begin{proof}
+
+\end{proof}
+
+
+
 
 \newpage
 
